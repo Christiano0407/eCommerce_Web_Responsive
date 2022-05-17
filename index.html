@@ -18,20 +18,77 @@
         <div class="container" id="containerID">
             <div class="overlay" data-overlay></div>
 
-            <a href="./index.html" class="logo">
+            <div href="./index.html" class="logo">
                 <img src="./src/assets/images/logo.svg" alt="logo-img" title="logo">
-            </a>
+            </div>
 
-            <button class="nav__open-btn" data-nav-open-btn aria-label="open Menu">
+            <!--Btn-Burger-->
+            <button class=" btn nav__open-btn" data-nav-open-btn aria-label="open Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
+            <!-- Navegation-->
+            <nav class="navBar" id="navegationBar" data-navBar>
+                <button class="nav__close-btn" data-nav-close-btn aria-label="Close Menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
 
-            <nav class="navBar" data-navBar>
+                <div class="logo">
+                    <a href="#">
+                        <img src="./src/assets/images/logo.svg" alt="logo-img" title="logo">
+                    </a>
+                </div>
 
+                <ul class="navBar-list">
+                    <li class="navBar-item">
+                        <a href="#" class="navBar-link">Home</a>
+                    </li>
+                    <li class="navBar-item">
+                        <a href="#" class="navBar-link">About</a>
+                    </li>
+                    <li class="navBar-item">
+                        <a href="#" class="navBar-link">Products</a>
+                    </li>
+                    <li class="navBar-item">
+                        <a href="#" class="navBar-link">Shop</a>
+                    </li>
+                    <li class="navBar-item">
+                        <a href="#" class="navBar-link">Blog</a>
+                    </li>
+                    <li class="navBar-item">
+                        <a href="#" class="navBar-link">Contact</a>
+                    </li>
+                </ul>
+
+                <ul class="nav-action-list">
+                    <li>
+                        <button class="nav-action-btn">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-action-btn">
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-action-btn">
+                            <a href="#"><i class="fa-solid fa-heart"></i></a>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-action-btn">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </button>
+                    </li>
+                </ul>
             </nav>
 
         </div>
     </header>
+
+    <main class="main" id="mainID">
+
+    </main>
     <!-- Javascript-->
     <script src="/src/js/index.js"></script>
 </body>
