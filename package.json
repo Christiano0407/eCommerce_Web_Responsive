@@ -1,0 +1,24 @@
+{
+  "name": "ecommerce_web_responsive",
+  "version": "1.0.0",
+  "description": "eCommerce Storee",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Christiano0407/eCommerce_Web_Responsive.git"
+  },
+  "keywords": [
+    "store",
+    "eCommerce",
+    "Shoes"
+  ],
+  "author": "Chris04",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Christiano0407/eCommerce_Web_Responsive/issues"
+  },
+  "homepage": "https://github.com/Christiano0407/eCommerce_Web_Responsive#readme"
+}
