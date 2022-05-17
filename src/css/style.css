@@ -1,6 +1,7 @@
 /** ==== Import */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+@import url(./mediaQueries.css);
 
 /** >>>>> Root */
 :root {
@@ -81,7 +82,7 @@ html {
     }
 }
 
-::-webkit-scrollbar {
+/* :-webkit-scrollbar {
     height: 0.5rem;
     width: 1rem;
 }
@@ -92,6 +93,22 @@ html {
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--oxford-blue_60);
+} */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 95%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
 }
 
 img {
@@ -220,9 +237,9 @@ body {
     transition: 0.25s var(--cubic-out);
 }
 
-.navBar .active {
+.navBar.active {
     visibility: visible;
-    transform: translateX(280px);
+    transform: translateX(200px);
     transition: 0.5s var(--cubic-in);
 }
 
@@ -292,3 +309,36 @@ body {
 .nav-action-btn:is(:hover, :focus) {
     color: var(--bittersweet);
 }
+
+.nav-action-btn i {
+    font-size: 2rem;
+}
+
+.nav-action-badge {
+    margin-left: auto;
+    font-size: var(--fs-8);
+    background: var(--bittersweet);
+    color: var(--white);
+    width: 18px;
+    height: 18px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: hsla(0, 0%, 0%, 0.6);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-1);
+}
+
+.overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*? === Hero === */
