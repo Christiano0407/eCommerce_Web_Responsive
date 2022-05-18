@@ -394,3 +394,21 @@ body {
     background-image: url("/src/assets/images/collection-1.jpg");
     object-fit: cover;
 }
+
+.collection-card.two {
+    background-image: url("/src/assets/images/collection-2.jpg");
+    object-fit: cover;
+}
+
+.collection-card.three {
+    background-image: url("/src/assets/images/collection-3.jpg");
+    object-fit: cover;
+}
+
+.has-scrollbar {
+    display: flex;
+    gap: 2.5rem;
+    overflow-x: auto;
+    padding-bottom: 2rem;
+    scroll-snap-type: inline mandatory;
+}
