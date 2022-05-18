@@ -223,13 +223,15 @@ body {
 
 /*? ===  navBar === */
 .navBar {
-    background-color: var(--clr-white);
+    background: var(--white);
     position: fixed;
     top: 0;
-    left: -200px;
+    left: -280px;
     width: 100%;
-    border-right: 3px solid;
-
+    max-width: 270px;
+    height: 100%;
+    border-right: 3px solid var(--rich-black-fogra-29);
+    font-family: var(--font-family-Mons);
     overflow-y: auto;
     overscroll-behavior: contain;
     z-index: 2;
@@ -239,7 +241,7 @@ body {
 
 .navBar.active {
     visibility: visible;
-    transform: translateX(200px);
+    transform: translateX(280px);
     transition: 0.5s var(--cubic-in);
 }
 
@@ -342,3 +344,16 @@ body {
 }
 
 /*? === Hero === */
+.hero {
+    background-image: url("../assets/images/hero-banner.png");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.hero {
+    min-height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}

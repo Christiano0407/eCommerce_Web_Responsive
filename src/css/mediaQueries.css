@@ -47,6 +47,50 @@
     .has-scrollbar>li {
         min-width: calc(33.33% - 16.66px);
     }
+
+    .navBar,
+    .navBar-list,
+    .nav-action-list {
+        all: unset;
+    }
+
+    .navBar-item:not(:last-child) {
+        border: none;
+    }
+
+    .navBar-list,
+    .nav-action-list {
+        display: flex;
+    }
+
+    .nav-action-list {
+        gap: 2rem;
+    }
+
+    #navegationBar {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .navBar-list {
+        margin-inline: auto;
+        gap: 3.5rem;
+    }
+
+    .nav-action-list>li:first-child {
+        display: block;
+    }
+
+    .nav-action-btn {
+        position: relative;
+    }
+
+    .nav-action-badge {
+        position: absolute;
+        top: .5rem;
+        right: -12px;
+    }
 }
 
 
