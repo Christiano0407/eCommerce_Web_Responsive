@@ -222,6 +222,10 @@ body {
     background-color: var(--salmon);
 }
 
+.container {
+    outline: 2px solid #000;
+}
+
 /*? ===  navBar === */
 .navBar {
     background: var(--white);
@@ -443,4 +447,29 @@ body {
 
 .btn-secondary i {
     margin-left: .5rem;
+}
+
+/*? === === Product === === */
+.product .section-title {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filter-btn {
+    color: var(--onyx);
+    padding: 1rem 1.6rem;
+    font-family: var(--font-family-Os);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-500);
+    border-radius: 3rem;
+    border: 1px solid var(--gainsboro);
 }
