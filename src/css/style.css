@@ -228,12 +228,12 @@ body {
 
 /*? ===  navBar === */
 .navBar {
-    background: var(--white);
+    background-color: #f2f2f2;
     position: fixed;
     top: 0;
     left: -280px;
     width: 100%;
-    max-width: 270px;
+    max-width: 280px;
     height: 100%;
     border-right: 3px solid var(--rich-black-fogra-29);
     font-family: var(--font-family-Mons);
@@ -266,7 +266,7 @@ body {
 
 .navBar .logo {
     background: var(--maximum-blue-green_10);
-    padding: 5rem 4rem;
+    padding: 1rem;
 }
 
 .navBar .logo .img {
@@ -281,6 +281,7 @@ body {
 .navBar-list,
 .nav-action-list {
     margin: 3rem;
+    flex-direction: column;
 }
 
 .navBar-item:not(:last-child) {
@@ -291,6 +292,9 @@ body {
     color: var(--rich-black-29);
     padding: 1rem;
     transition: var(--transition-1);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .navBar-link:is(:hover, :focus) {
