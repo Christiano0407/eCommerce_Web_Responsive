@@ -536,3 +536,19 @@ body {
     font-size: var(--fs-7);
     border-radius: 2.5rem;
 }
+
+.card-action-list {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    transition: var(--transition-1);
+}
+
+.card-action-list i {
+    margin-right: 1rem;
+}
+
+.product-card :is(:hover, :focus) .card-action-list {
+    right: 2rem;
+    opacity: 1;
+}
