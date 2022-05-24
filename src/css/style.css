@@ -548,7 +548,25 @@ body {
     margin-right: 1rem;
 }
 
-.product-card :is(:hover, :focus) .card-action-list {
+/* .product-card :is(:hover, :focus) .card-action-list {
     right: 2rem;
     opacity: 1;
+}
+ */
+
+.card-action-item {
+    position: relative;
+}
+
+.card-action-item:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.card-action-btn i {
+    background-color: #fff;
+    color: var(--rich-black-29);
+    font-size: 1.8rem;
+    padding: 1rem;
+    border-radius: 50%;
+    transition: var(--transition-1);
 }
